@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HighTechInfo - Soluções Tecnologicas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">HighTechInfo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="inicio" class="py-5 mt-5 bg-light text-center">
+      <div class="container">
+        <h1 class="display-5 fw-bold">Soluções em Informática</h1>
+        <p class="lead mt-3">Suporte, manutenção e conhecimento para estudantes de tecnologia.</p>
+      </div>
+    </section>
+    <section id="servicos" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Áreas de Atuação</h2>
+          <p class="text-muted">Conhecimentos e serviços oferecidos em informática.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Manutenção de Computadores</h5>
+                <p class="card-text">Limpeza, troca de peças e formatação para manter seu PC funcionando.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Redes e Internet</h5>
+                <p class="card-text">Configuração de roteadores, cabeamento e conexão sem fio.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Programação</h5>
+                <p class="card-text">Introdução ao desenvolvimento em linguagens como Python, Java e HTML.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sobre" class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <img src="https://totalip.com.br/wp-content/webp-express/webp-images/uploads/2023/08/A-tecnologia-impulsiona-o-futuro-do-Brasil.png.webp" class="img-fluid rounded shadow-sm" alt="Estudo de informática">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="fw-bold">Sobre o Projeto</h2>
+            <p class="lead">Descomplicando a tecnologia para si</p>
+            <p class="text-muted">Já se sentiu frustrado com a tecnologia?
+                Um computador lento, uma rede que não funciona ou a simples dúvida de qual
+                é o melhor programa para a sua necessidade? Nós entendemos. Nascemos da vontade de traduzir
+                o 'tecniquês' e tornar a informática uma ferramenta, e não um problema.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contato" class="py-5">
+      <div class="container">
+        <h2 class="fw-bold text-center mb-4">Entre em Contato</h2>
+        <form class="mx-auto" style="max-width: 600px;">
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="mensagem" class="form-label">Mensagem</label>
+            <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+
