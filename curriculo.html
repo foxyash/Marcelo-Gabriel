@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo de Gabriel</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; 
+            color: #333; 
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .curriculo-container {
+            max-width: 800px;
+            margin: 0 auto; 
+            background-color: #fff; 
+            padding: 30px;
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #f4f4f4;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #2c3e50;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            color: #7f8c8d;
+        }
+
+        .secao {
+            margin-bottom: 20px;
+        }
+
+        .secao h2 {
+            color: #3498db; 
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+        }
+
+        .item-experiencia {
+            margin-bottom: 15px;
+        }
+
+        .item-experiencia h3 {
+            margin-bottom: 5px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        button {
+            padding: 5px 10px;
+            border: 1px solid #3498db;
+            background-color: #fff;
+            color: #3498db;
+            border-radius: 5px;
+            cursor: pointer; 
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #3498db;
+            color: #fff;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    </head>
+<body>
+
+    <div class="curriculo-container">
+        <header>
+            <h1>Gabriel Cavalcante Sandoval</h1>
+            <p>gabriel@gmail.com | (16) 91234-5678 | Ribeirão Preto, SP</p>
+        </header>
+
+        <main>
+            <section class="secao">
+                <h2>Resumo Profissional</h2>
+                <p>
+                    Profissional de TI com experiência em manutenção de computadores, redes e programação. Apaixonado por tecnologia e sempre buscando aprender novas habilidades para oferecer soluções eficazes.
+                </p>
+            </section>
+
+            <section class="secao">
+                <h2>Experiência Profissional
+                    <button id="toggleExperiencia">Mostrar/Ocultar</button>
+                </h2>
+                <div id="experiencia-conteudo">
+                    <div class="item-experiencia">
+                        <h3>AlphaTech Financeira | Especialista em Segurança da Informação Sênior</h3>
+                        <p><em>Janeiro 2022 - Presente</em></p>
+                        <ul>
+                            <li>Liderança na implementação e configuração da nova plataforma SIEM (Security Information and Event Management), resultando na redução de 40% no tempo médio de deteção de ameaças.</li>
+                            <li>Desenvolvimento e aplicação de políticas de segurança e planos de resposta a incidentes para garantir a conformidade com a LGPD e a norma ISO 27001.</li>
+                            <li>Condução de treinamentos de conscientização em segurança (security awareness) para mais de 500 colaboradores e realização de testes de phishing simulados.</li>
+                        </ul>
+
+                        <h3>ProtekData Soluções | Analista de Segurança da Informação Pleno</h3>
+                        <p><em>Março 2020 - Dezembro 2021</em></p>
+                        <ul>
+                            <li>Monitoramento contínuo de alertas de segurança utilizando ferramentas como Splunk para identificar, analisar e reportar atividades suspeitas na rede corporativa.</li>
+                            <li>Realização de análises de vulnerabilidade (scans) em sistemas e aplicações web, e coordenação com as equipas de desenvolvimento para a aplicação de correções.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="secao">
+                <h2>Formação Acadêmica</h2>
+                <h3>Universidade Paulista - UNIP</h3>
+                <p><em>Análise e Desenvolvimento de Sistemas - Concluído em 2025</em></p>
+            </section>
+
+            <section class="secao">
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript (Básico)</li>
+                    <li>Análise de Vulnerabilidades (Nessus)</li>
+                    <li>Git/GitHub</li>
+                    <li>Python (Básico)</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            const botaoToggle = document.getElementById('toggleExperiencia');
+
+            const experienciaConteudo = document.getElementById('experiencia-conteudo');
+
+            botaoToggle.addEventListener('click', function() {
+                experienciaConteudo.classList.toggle('hidden');
+            });
+
+        });
+    </script>
+    </body>
+</html>
